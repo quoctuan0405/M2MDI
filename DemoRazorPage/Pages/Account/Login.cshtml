@@ -1,0 +1,15 @@
+﻿@page
+@model DemoRazorPage.Pages.Auth.LoginModel
+@{
+}
+
+<h1>Login</h1>
+
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="Account.Username">Username</label>
+        <input asp-for="Account.Username" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>

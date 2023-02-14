@@ -1,0 +1,43 @@
+﻿@page
+@model DemoRazorPage.Pages.CarView.AddToCartModel
+
+<h1>Your cart</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Car Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Account != null)
+        {
+            @foreach(var obj in Model.Account.Carts)
+            {
+                <tr>
+                    <td>@obj.Id</td>
+                    <td>@obj.Car.Name</td>
+                    <td>@obj.Car.Price</td>
+                    <td>@obj.Quantity</td>
+                    <td><a type="button" class="btn btn-primary" asp-page="Update" asp-route-id="@obj.Id"><i class="fa fa-edit"></i> Update</a></td>
+                    <td><a type="button" class="btn btn-danger" asp-page="Delete" asp-route-id="@obj.Id"><i class="fa fa-trash"></i> Delete</a></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<form method="post">
+    <div class="row g-3 align-items-center">
+        <div class="col-auto">
+            <span class="form-text">
+                <button type="submit" class="btn btn-primary">Buy now</button>
+            </span>
+        </div>
+    </div>
+</form>

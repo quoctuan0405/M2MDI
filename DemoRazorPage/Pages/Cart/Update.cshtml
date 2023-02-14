@@ -1,0 +1,24 @@
+﻿@page
+@model DemoRazorPage.Pages.Cart.UpdateModel
+
+
+<h1>Update Car Information</h1>
+<form method="post">
+    <input asp-for="Cart.Id" class="form-control" hidden />
+    <input asp-for="Cart.CarId" class="form-control" hidden />
+    <div class="mb-3">
+        <label asp-for="Cart.Car.Name">Car Name</label>
+        <input asp-for="Cart.Car.Name" class="form-control" disabled>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Cart.Car.Price">Price </label>
+        <input asp-for="Cart.Car.Price" class="form-control" disabled>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Cart.Quantity">Quantity</label>
+        <input asp-for="Cart.Quantity" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+   

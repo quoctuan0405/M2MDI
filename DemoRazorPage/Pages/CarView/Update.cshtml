@@ -1,0 +1,27 @@
+﻿@page
+@model DemoRazorPage.Pages.CarView.UpdateModel
+
+
+<h1>Update Car Information</h1>
+<form method="post">
+    <input asp-for="Car.Id" class="form-control" hidden>
+    <div class="mb-3">
+        <label asp-for="Car.Name">Car Name</label>
+        <input asp-for="Car.Name" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Car.Manufacture">Manufacture</label>
+        <input asp-for="Car.Manufacture" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Car.Price">Price </label>
+        <input asp-for="Car.Price" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Car.ReleaseYear">Released Year </label>
+        <input asp-for="Car.ReleaseYear" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+   

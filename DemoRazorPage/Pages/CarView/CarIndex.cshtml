@@ -1,0 +1,58 @@
+﻿@page
+@model DemoRazorPage.Pages.CarView.CarIndexModel
+@{
+}
+
+<a class="btn btn-primary" asp-page="Create"><i class="fa fa-plus"> </i> Create</a>
+<br />
+<br />
+
+<form method="post">
+    <div class="row g-3 align-items-center">
+    
+        <div class="col-4">
+            <input asp-for="Car.Name" class="form-control" >
+        </div>
+        <div class="col-auto">  
+            <span  class="form-text">
+                <button type="submit" class="btn btn-success"><i class="fa fa-search"></i> Search</button>
+            </span>
+        </div>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Car Name</th>
+            <th scope="col">Manufacture</th>
+            <th scope="col">Price</th>
+            <th scope="col">Released Year</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Update</th>
+            <th scope="col">Add to cart</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var car in Model.cars)
+        {
+            <tr>
+                <td>@car.Id</td>
+                <td>@car.Name</td>
+                <td>@car.Manufacture</td>
+                <td>@car.Price</td>
+                <td>@car.ReleaseYear</td>
+                <td><a type="button" class="btn btn-danger" asp-page="Delete" asp-route-id="@car.Id"><i class="fa fa-trash"></i> Delete</a></td>
+                <td><a type="button" class="btn btn-primary" asp-page="Update" asp-route-id="@car.Id"><i class="fa fa-edit"></i> Update</a></td>
+                <td>
+                    <form asp-page="/Cart/Create" method="post">
+                        <input asp-for="@car.Id" name="carId" class="form-control" hidden>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+   
