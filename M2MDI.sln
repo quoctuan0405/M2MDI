@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoRazorPage", "DemoRazorPage\DemoRazorPage.csproj", "{937AB29E-CEE3-4659-AB25-EBB0A4B9754D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M2MDI", "DemoRazorPage\M2MDI.csproj", "{937AB29E-CEE3-4659-AB25-EBB0A4B9754D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
