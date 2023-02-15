@@ -18,6 +18,7 @@ builder.Services.AddAuthentication("myCookie").AddCookie("myCookie", (options) =
 
 builder.Services.AddRazorPages(options =>
 {
+    options.Conventions.AuthorizeFolder("/Cart");
     options.Conventions.AuthorizePage("/CarView/Create");
     options.Conventions.AuthorizePage("/CarView/Update");
     options.Conventions.AuthorizePage("/CarView/Delete");
