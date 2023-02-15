@@ -19,5 +19,6 @@ namespace DemoRazorPage.Model
         [Required]
         public int ReleaseYear { get; set; }
 
+        public int Quantity { get; set; }
     }
 }

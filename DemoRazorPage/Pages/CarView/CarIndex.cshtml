@@ -29,6 +29,7 @@
             <th scope="col">Manufacture</th>
             <th scope="col">Price</th>
             <th scope="col">Released Year</th>
+            <th scope="col">Quantity</th>
             <th scope="col">Delete</th>
             <th scope="col">Update</th>
             <th scope="col">Add to cart</th>
@@ -43,6 +44,7 @@
                 <td>@car.Manufacture</td>
                 <td>@car.Price</td>
                 <td>@car.ReleaseYear</td>
+                <td>@car.Quantity</td>
                 <td><a type="button" class="btn btn-danger" asp-page="Delete" asp-route-id="@car.Id"><i class="fa fa-trash"></i> Delete</a></td>
                 <td><a type="button" class="btn btn-primary" asp-page="Update" asp-route-id="@car.Id"><i class="fa fa-edit"></i> Update</a></td>
                 <td>
