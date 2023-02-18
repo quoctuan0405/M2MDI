@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIFromScratchEnd", "DIFromS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIFromScratchStart", "DIFromScratchStart\DIFromScratchStart.csproj", "{B349456D-1464-48CD-AC92-7E517146513E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DILifecycle", "DILifecycle\DILifecycle.csproj", "{7CEE1869-F05C-4FED-A851-B836853600F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B349456D-1464-48CD-AC92-7E517146513E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B349456D-1464-48CD-AC92-7E517146513E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B349456D-1464-48CD-AC92-7E517146513E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CEE1869-F05C-4FED-A851-B836853600F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CEE1869-F05C-4FED-A851-B836853600F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CEE1869-F05C-4FED-A851-B836853600F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CEE1869-F05C-4FED-A851-B836853600F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
