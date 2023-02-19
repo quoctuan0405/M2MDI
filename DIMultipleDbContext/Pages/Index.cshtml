@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<h3>From SQL Server: </h3>
+<h4>List user: </h4>
+<ul>
+    @foreach(var user in Model.Users)
+    {
+        <li>@user.Username</li>
+    }
+</ul>
+<h4>List car: </h4>
+<ul>
+    @foreach(var car in Model.Cars)
+    {
+        <li>@car.Name</li>
+    }
+</ul>
+<h3>From Postgres: </h3>
+<h4>List set: </h4>
+<ul>
+    @foreach(var set in Model.Sets)
+    {
+        <li>@set.Name</li>
+    }
+</ul>
+<h3>From Redis: </h3>
+<p>Hi: @Model.Hi</p>
